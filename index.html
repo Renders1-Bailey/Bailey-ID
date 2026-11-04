@@ -1,15 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bailey ID</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5eee3">
+  <title>Bailey | My Pet ID</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Arial, sans-serif;
+      background: #f5eee3;
+      color: #3b3028;
+    }
+
+    .container {
+      max-width: 440px;
+      margin: 0 auto;
+      background: #fffdf9;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(70, 50, 30, 0.12);
+    }
+
+    .header {
+      background: #a97852;
+      color: white;
+      text-align: center;
+      padding: 32px 20px;
+    }
+
+    .paw {
+      font-size: 42px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      font-size: 15px;
+      opacity: 0.95;
+    }
+
+    .photo-placeholder {
+      width: 150px;
+      height: 150px;
+      margin: 24px auto 8px;
+      border-radius: 50%;
+      background: #eadcc9;
+      border: 5px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 65px;
+    }
+
+    .content {
+      padding: 24px;
+    }
+
+    .section {
+      margin-bottom: 24px;
+    }
+
+    .section h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #a97852;
+      margin: 0 0 10px;
+    }
+
+    .info {
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .button {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: 650;
+      margin: 12px 0;
+    }
+
+    .primary {
+      background: #a97852;
+      color: white;
+    }
+
+    .secondary {
+      background: #eee3d5;
+      color: #49392d;
+    }
+
+    .notice {
+      background: #f8f0e5;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      color: #9b8b7b;
+      font-size: 12px;
+    }
+  </style>
 </head>
+
 <body>
-  <main>
-    <h1>Bailey ID</h1>
-    <p>This repository contains the Bailey ID project.</p>
-    <p>Bailey ID is a small project intended to hold source files, documentation, and related assets.</p>
+  <main class="container">
+
+    <header class="header">
+      <div class="paw">🐾</div>
+      <h1>Hi, I'm Bailey!</h1>
+      <div class="subtitle">If I'm lost, please help me get home.</div>
+      <div class="photo-placeholder" aria-label="Dog photo placeholder">
+        🐶
+      </div>
+    </header>
+
+    <div class="content">
+
+      <section class="section">
+        <h2>About Me</h2>
+        <div class="info">
+          <strong>Name:</strong> Bailey<br>
+          <strong>Breed:</strong> Cavapoo<br>
+          <strong>Pet type:</strong> Family dog
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Contact My Family</h2>
+
+        <a class="button primary" href="tel:2152626363">
+          📞 Call My Owner
+        </a>
+
+        <a class="button secondary" href="tel:2152626364">
+          📞 Call Backup Contact
+        </a>
+
+        <div class="notice">
+          Thank you for looking out for me!<br>
+          Please contact my family if you find me.
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>My Veterinarian</h2>
+        <div class="info">
+          <strong>Animal Hospital of Warwick</strong>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+      Bailey's Personal Pet ID<br>
+      Thank you for keeping me safe! ❤️
+    </footer>
+
   </main>
 </body>
 </html>
